@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>Krishna Khandelwal | Portfolio</title>
+</head>
+<body>
+        <div id="preloader" style="position:fixed;z-index:9999;inset:0;background:#0a0a0a;display:flex;align-items:center;justify-content:center;transition:opacity 0.7s;">
+            <div style="text-align:center;">
+                <div style="width:60px;height:60px;border:6px solid #e50914;border-top:6px solid #222;border-radius:50%;margin:auto;animation:spin 1s linear infinite;"></div>
+                <p style="color:#fff;margin-top:18px;letter-spacing:2px;font-family:'Space Grotesk',sans-serif;">Loading...</p>
+            </div>
+        </div>
+        <script>
+            window.addEventListener('DOMContentLoaded',function(){
+                setTimeout(function(){
+                    document.getElementById('preloader').style.opacity='0';
+                    setTimeout(function(){document.getElementById('preloader').style.display='none';},700);
+                }, 1200);
+            });
+        </script>
+        <style>@keyframes spin{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}</style>
+    <!--navigation bar-->
+    <nav class="navbar">
+        <div class="nav-container" style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+            <div class="logo">KrishnaKhandelwal()</div>
+            <div style="flex:1;"></div>
+            <ul class="nav-links" style="margin-left:auto;display:flex;gap:24px;align-items:center;">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="home" class="home zoom-on-scroll">
+        <div id="form-status" style="display:none;margin-bottom:18px;"></div>
+        <div class="home-content">
+            <div class="home-text">
+                <h1 class="home-title">hey, i'm <span class="highlight">Krishna Khandelwal</span></h1>
+                <p>full-stack developer | Building stuff on the internet | </p>
+                <div class="home-buttons">
+                    <a href="#projects" class="btn btn-primary">see my work</a>
+                    <a href="#contact" class="btn btn-secondary">get in touch</a>
+        </div>
+    </section>
+    <!--about section-->
+    <section id="about" class="about zoom-on-scroll">
+        <h2 class="section-title">about me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>i'm a full-stack developer with a passion for building stuff on the internet. i have experience with a variety of technologies and frameworks, and i'm always eager to learn new things. i love working on projects that solve real-world problems and make people's lives easier.</p>
+                <p>when i'm not coding, you can find me exploring new places, trying out new recipes, or binge-watching my favorite shows. i'm also a big fan of open-source software and enjoy contributing to projects that I find interesting.</p>
+            </div>
+            <div class="about-skills">
+                <h3>skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Django</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--projects section-->
+    <section id="projects" class="projects zoom-on-scroll">
+        <h2 class="project-title">Projects</h2>
+            <div class="projects-list">
+               <h3>Project 1: Portfolio Website</h3>
+                    <p align="left">A personal portfolio website built using HTML, CSS, and php to showcase my skills and projects.</p>
+                    <div class="tech-badges">
+                        <span class="badge">HTML</span>
+                        <span class="badge">CSS</span>
+                        <span class="badge">php</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Krishnak8080/Portfolio">Github-repo</a>
+                        <a href="#live-demo-link">Live Demo</a>
+                    </div>
+                <h3>Project 2: Commodities Management System</h3>
+                    <p align="left">A web application for managing commodities and their prices in a market. Special Login for Manager and Seller with restricted access.</p>
+                    <div class="tech-badges">
+                        <span class="badge">HTML</span>
+                        <span class="badge">CSS</span>
+                        <span class="badge">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Krishnak8080/Commodities_management">Github-repo</a>
+                        <a href="#live-demo-link">Live Demo</a>
+                    </div>
+                <h3>Project 3: Playhub</h3>
+                    <p align="left">A retro Gaming website built using HTML, CSS, and JavaScript to showcase classic arcade games and their features.</p>
+                    <div class="tech-badges">
+                        <span class="badge">HTML</span>
+                        <span class="badge">CSS</span>
+                        <span class="badge">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Krishnak8080/Playhub">Github-repo</a>
+                        <a href="#live-demo-link">Live Demo</a>
+                    </div>             
+            </div>   
+    </section>
+    <!--contact section-->
+    <section id="contact" class="contact zoom-on-scroll">
+        <h2 class="section-title">get in touch</h2>
+        <p>i'm always open to new opportunities and collaborations. if you have a project in mind or just want to say hi, feel free to reach out!</p>
+        <div class="contact-info">
+            <a href="mailto:khandelwalkrishna8080@gmail.com" target="_blank" rel="noopener">
+                <span>📧</span> Email
+            </a>
+            <a href="https://www.linkedin.com/in/krishna-khandelwal-8080/" target="_blank" rel="noopener">
+                <span>💼</span> LinkedIn
+            </a>
+            <a href="https://github.com/krishnakhandelwal8080" target="_blank" rel="noopener">
+                <span>🐙</span> GitHub
+            </a>
+        </div>
+    </section>
+    <section id="contact-me-form" class="contact-me-form zoom-on-scroll">
+        <h2 class="section-title">contact me</h2>
+        <form action="submit_form.php" method="POST" class="contact-form" aria-colspan="10">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <br>
+            <label for="list">Where are you from</label>
+            <select id="list" name="location" required>
+                <option value="">Select a location</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Pune">Pune</option>
+                <option value="Surat">Surat</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Kanpur">Kanpur</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Indore">Indore</option>
+                <option value="Thane">Thane</option>
+                <option value="Bhopal">Bhopal</option>
+                <option value="Visakhapatnam">Visakhapatnam</option>
+                <option value="Pimpri-Chinchwad">Pimpri-Chinchwad</option>
+                <option value="Patna">Patna</option>
+                <option value="Vadodara">Vadodara</option>
+                <option value="Ghaziabad">Ghaziabad</option>
+                <option value="Ludhiana">Ludhiana</option>
+                <option value="Agra">Agra</option>
+                <option value="Nashik">Nashik</option>
+                <option value="Faridabad">Faridabad</option>
+                <option value="Meerut">Meerut</option>
+                <option value="Rajkot">Rajkot</option>
+                <option value="Kalyan-Dombivli">Kalyan-Dombivli</option>
+                <option value="Vasai-Virar">Vasai-Virar</option>
+                <option value="Varanasi">Varanasi</option>
+                <option value="Srinagar">Srinagar</option>
+                <option value="Aurangabad">Aurangabad</option>
+                <option value="Dhanbad">Dhanbad</option>
+                <option value="Amritsar">Amritsar</option>
+                <option value="Navi Mumbai">Navi Mumbai</option>
+                <option value="Prayagraj">Prayagraj</option>
+                <option value="Howrah">Howrah</option>
+                <option value="Gwalior">Gwalior</option>
+                <option value="Jabalpur">Jabalpur</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Vijayawada">Vijayawada</option>
+                <option value="Jodhpur">Jodhpur</option>
+                <option value="Madurai">Madurai</option>
+                <option value="Raipur">Raipur</option>
+                <option value="Kota">Kota</option>
+                <option value="Guwahati">Guwahati</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Solapur">Solapur</option>
+                <option value="Hubli-Dharwad">Hubli-Dharwad</option>
+                <option value="Bareilly">Bareilly</option>
+                <option value="Moradabad">Moradabad</option>
+                <option value="Mysore">Mysore</option>
+                <option value="Tiruchirappalli">Tiruchirappalli</option>
+                <option value="Gurugram">Gurugram</option>
+                <option value="Aligarh">Aligarh</option>
+                <option value="Jalandhar">Jalandhar</option>
+                <option value="Bhubaneswar">Bhubaneswar</option>
+                <option value="Salem">Salem</option>
+                <option value="Mira-Bhayandar">Mira-Bhayandar</option>
+            </select>
+            <br>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </form>
+    </section>
+    <script>
+        // Scroll zoom effect
+        (function(){
+            const els = document.querySelectorAll('.zoom-on-scroll');
+            function update(){
+                const centerY = window.innerHeight / 2;
+                els.forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    const elCenter = rect.top + rect.height/2;
+                    const dist = Math.abs(centerY - elCenter);
+                    const max = window.innerHeight * 0.9;
+                    const ratio = Math.min(dist / max, 1);
+                    const scale = 1.06 - (ratio * 0.1); // between ~0.96 and 1.06
+                    el.style.transform = `scale(${scale})`;
+                });
+            }
+            window.addEventListener('scroll', () => requestAnimationFrame(update));
+            window.addEventListener('resize', () => requestAnimationFrame(update));
+            requestAnimationFrame(update);
+        })();
+        // Show form status from URL
+        (function(){
+          const params = new URLSearchParams(window.location.search);
+          const status = params.get('status');
+          if(status){
+            const el = document.getElementById('form-status');
+            el.style.display = 'block';
+            el.style.padding = '14px 18px';
+            el.style.borderRadius = '10px';
+            el.style.fontWeight = '600';
+            el.style.fontFamily = 'Space Grotesk, sans-serif';
+            if(status==='sent'){
+              el.style.background = '#1a2';
+              el.style.color = '#fff';
+              el.textContent = 'Thank you! Your message was sent.';
+            }else{
+              el.style.background = '#e50914';
+              el.style.color = '#fff';
+              el.textContent = 'Sorry, there was a problem sending your message.';
+            }
+            setTimeout(()=>{el.style.display='none';}, 5000);
+          }
+        })();
+    </script>
+    <!--footer-->
+    <footer>
+        <p>&copy; 2026 Krishna Khandelwal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
